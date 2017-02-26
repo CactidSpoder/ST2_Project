@@ -47,16 +47,15 @@ public class MBTI_TestView {
         
         System.out.println("\nDescription:");
         
-        for(int x = 0; x < splitDescription.length; x++){
+        for (String splitDescription1 : splitDescription) {
             
-            if(currString.length() < 40)
-                currString += splitDescription[x] + " ";
-            else{
-                
+            if (currString.length() < 40)
+                currString += splitDescription1 + " ";
+            
+            else {
                 System.out.println(currString);
                 currString = "";
             }
         }
-        
     }
 }

@@ -13,7 +13,7 @@ import java.util.HashMap;
  */
 public class PersonalityTypeModel {
     
-    private HashMap<String, PersonalityType> personalityMap;
+    private final HashMap<String, PersonalityType> personalityMap;
     
     public PersonalityTypeModel() {
     
