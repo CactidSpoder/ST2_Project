@@ -8,6 +8,7 @@ import java.util.Scanner;
  */
 
 public class MBTI_TestView {
+    
     private final Scanner sc;
     
     public MBTI_TestView() {
@@ -34,5 +35,28 @@ public class MBTI_TestView {
         }
         
         return input;
+    }
+    
+    public void showPersonalityType(String acronym, String name, String description) {
+        
+        String[] splitDescription = description.split(" ");
+        String currString = "";
+        
+        System.out.println("\n\nYou are an " + acronym + ", also known as \""
+                + name +"\"");
+        
+        System.out.println("\nDescription:");
+        
+        for(int x = 0; x < splitDescription.length; x++){
+            
+            if(currString.length() < 40)
+                currString += splitDescription[x] + " ";
+            else{
+                
+                System.out.println(currString);
+                currString = "";
+            }
+        }
+        
     }
 }
