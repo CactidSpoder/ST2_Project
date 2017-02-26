@@ -4,6 +4,7 @@ package st2_project;
  *
  * @author Paolo Merle, Corina Obrero
  */
+
 public class MBTI_TestController {
     
     private final String[] answerList;

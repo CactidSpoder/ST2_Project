@@ -4,6 +4,7 @@ package st2_project;
  *
  * @author Paolo Merle, Corina Obrero
  */
+
 public class ST2_Project {
 
     public static void main(String[] args) {

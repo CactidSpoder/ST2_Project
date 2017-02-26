@@ -4,6 +4,7 @@ package st2_project;
  *
  * @author Paolo Merle, Corina Obrero
  */
+
 public class PersonalityType {
     
     private final String name;

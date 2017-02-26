@@ -4,8 +4,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author ASUS
+ * @author Paolo Merle, Corina Obrero
  */
+
 class MBTI_TestModel {
     
     private ArrayList<String> questions;
