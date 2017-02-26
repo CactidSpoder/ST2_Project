@@ -9,12 +9,10 @@ import java.util.ArrayList;
 
 class MBTI_TestModel {
     
-    private ArrayList<String> questions;
-    private MBTI_TestController controller;
+    private final ArrayList<String> questions;
 
-    MBTI_TestModel(MBTI_TestController controller) {
+    MBTI_TestModel() {
         
-        this.controller = controller;
         questions = new ArrayList<>();
     }
     
@@ -23,8 +21,8 @@ class MBTI_TestModel {
         return questions.size();
     }
 
-    public String getQuestion(int x) {
+    public String getQuestion(int index) {
         
-        return questions.get(x);
+        return questions.get(index);
     }
 }

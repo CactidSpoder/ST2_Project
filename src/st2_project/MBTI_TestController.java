@@ -12,7 +12,7 @@ public class MBTI_TestController {
     private final MBTI_TestModel testModel;
     private final PersonalityTypeModel personalityModel;
     
-    public MBTI_TestController(){
+    public MBTI_TestController() {
         
         answerList = new String[70];
         
@@ -41,7 +41,7 @@ public class MBTI_TestController {
         */
         
         testView = new MBTI_TestView();
-        testModel = new MBTI_TestModel(this);
+        testModel = new MBTI_TestModel();
         personalityModel = new PersonalityTypeModel();
     }
     
@@ -54,7 +54,7 @@ public class MBTI_TestController {
         }
     }
     
-    public void calculatePersonalityType(){
+    public void calculatePersonalityType() {
         
         String acronym = "";
         
@@ -69,7 +69,7 @@ public class MBTI_TestController {
                 personalityType.getDescription());
     }
     
-    public boolean isA(int startNode1, int startNode2){
+    private boolean isA(int startNode1, int startNode2) {
         
         int a = 0;
         int b = 0;
@@ -86,7 +86,7 @@ public class MBTI_TestController {
         return a > b;
     }
     
-    private int summarize(String answer, int startNode){
+    private int summarize(String answer, int startNode) {
         
         int sum = 0;
         
